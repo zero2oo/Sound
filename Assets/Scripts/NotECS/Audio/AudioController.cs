@@ -112,7 +112,7 @@ public class AudioController : MonoBehaviour
 
     private void OnDestroy()
     {
-        _asioOut.Dispose();
+        _asioOut?.Dispose();
         _writer.Dispose();
         _writer = null;
     }
